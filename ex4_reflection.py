@@ -73,7 +73,14 @@ reviewer_agent = create_agent(
 
 
 print("Wikipedia Writer Team (type 'quit' to exit)")
-while (topic := input("Wikipedia page: ").strip()).lower() not in {"quit", "exit"}:
+while True:
+    try:
+        topic = input("Wikipedia page: ").strip()
+    except KeyboardInterrupt:
+        print("\nGoodbye.")
+        break
+    if topic.lower() in {"quit", "exit"}:
+        break
     if not topic:
         continue
     draft = write_document(f"Write a document about the Wikipedia page titled: {topic}")

@@ -34,7 +34,14 @@ agent = create_agent(
 
 print("Agent with Tracing - Weather Clothing (type 'quit' to exit)")
 conversation = []
-while (question := input("You: ").strip()).lower() not in {"quit", "exit"}:
+while True:
+    try:
+        question = input("You: ").strip()
+    except KeyboardInterrupt:
+        print("\nGoodbye.")
+        break
+    if question.lower() in {"quit", "exit"}:
+        break
     if question:
         conversation = common.trace_agent(
             agent,
