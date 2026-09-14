@@ -82,7 +82,7 @@ def get_wikipedia_page(title: str) -> str:
     })
     request = Request(
         url,
-        headers={"User-Agent": "oci-langgraph-dac/1.0 (https://github.com/mgueury/oci-langgraph-dac)"},
+        headers={"User-Agent": "oci-langchain-dac/1.0 (https://github.com/mgueury/oci-langchain-dac)"},
     )
     try:
         with urlopen(request, timeout=10) as response:
