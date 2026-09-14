@@ -54,8 +54,7 @@ writer_agent = create_agent(
     [get_wikipedia_page],
     system_prompt=(
         "Write a concise, factual Markdown document from the requested English Wikipedia page. "
-        "Always call get_wikipedia_page first. Use a clear title, short introduction, logical "
-        "section headings, and a brief conclusion. Do not add facts not present in the page. "
+        "Always call get_wikipedia_page first. Do not add facts not present in the page. "
         "Return only the document."
     ),
 )
