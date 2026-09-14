@@ -1,8 +1,8 @@
-# LangGraph OCI Agent Examples
+# LangChain Agents - OCI Examples
 
 Five small, interactive Python examples that combine OCI Generative AI with
-LangChain and LangGraph. They progress from an explicit tool graph to traced
-ReAct agents, a writer/reviewer team, and a holiday supervisor with subagents.
+LangChain and LangGraph. They progress from an explicit tool *Graph* to traced
+*Agents*, a writer/reviewer team, and a holiday *Supervisor* with subagents.
 
 Every program reads its local configuration from `.env`. Type `quit` or `exit`
 at a prompt to stop it.
