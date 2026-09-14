@@ -66,33 +66,33 @@ shows model and tool activity in addition to the terminal trace.
 
 ### 1. Explicit weather graph
 
-`ex1_weather_basic.py` builds the complete LangGraph flow explicitly:
+`ex1_langgraph.py` builds the complete LangGraph flow explicitly:
 model → weather tool → model. The weather tool is defined in the same file.
 
 ```bash
-python3 ex1_weather_basic.py
+python3 ex1_langgraph.py
 ```
 
 Try: `What should I wear in Brussels today?`
 
 ### 2. ReAct weather agent
 
-`ex2_react_agent.py` uses LangChain’s prebuilt agent loop with the reusable
+`ex2_agent.py` uses LangChain’s prebuilt agent loop with the reusable
 weather tool from `tools.py`.
 
 ```bash
-python3 ex2_react_agent.py
+python3 ex2_agent.py
 ```
 
 Try: `Should I take an umbrella in London, GB?`
 
 ### 3. Traced ReAct weather agent
 
-`ex3_react_agent.py` is the same weather assistant with readable terminal and
+`ex3_agent_trace.py` is the same weather assistant with readable terminal and
 optional Langfuse tracing.
 
 ```bash
-python3 ex3_react_agent.py
+python3 ex3_agent_trace.py
 ```
 
 Try: `What should I wear in Brussels, BE today?`
