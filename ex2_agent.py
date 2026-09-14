@@ -32,7 +32,7 @@ agent = create_agent(
     ),
 )
 
-print("Weather Clothing ReAct Agent (type 'quit' to exit)")
+print("Agent - Weather Clothing (type 'quit' to exit)")
 conversation = []
 while (question := input("You: ").strip()).lower() not in {"quit", "exit"}:
     if question:

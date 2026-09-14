@@ -81,7 +81,7 @@ graph.add_conditional_edges("assistant", tools_condition, {"tools": "tools", END
 graph.add_edge("tools", "assistant")
 agent = graph.compile()
 
-print("Weather Clothing Assistant (type 'quit' to exit)")
+print("LangGraph - Weather Clothing (type 'quit' to exit)")
 conversation = []
 while (question := input("You: ").strip()).lower() not in {"quit", "exit"}:
     if question:
