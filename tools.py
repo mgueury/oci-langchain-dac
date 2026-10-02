@@ -21,7 +21,7 @@ HR_FAQ = {
     "sick leave": "Report sick leave to your manager before the start of your working day.",
 }
 HOLIDAY_FILE = Path(__file__).with_name("holiday.json")
-DEFAULT_TIMEZONE = "Europe/Brussels"
+DEFAULT_TIMEZONE = "America/Los_Angeles"
 ANNUAL_HOLIDAY_ALLOWANCE = 25
 
 
