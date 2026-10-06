@@ -23,7 +23,7 @@ cp .env.example .env
 Edit `.env` with your OCI configuration and OpenWeather key:
 
 ```env
-GENAI_MODEL=xai.grok-4.6
+GENAI_MODEL=xai.grok-4.7
 REGION=us-chicago-1
 COMPARTMENT_OCID=ocid1.compartment.oc1..replace-me
 AUTH_TYPE=API_KEY
